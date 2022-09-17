@@ -2,6 +2,8 @@
  * 注意：修改配置文件请重启应用
  * 中文帮助文档：https://www.wenjiangs.com/doc/eslint-docs-rules-comma-dangle
  * 英文文档：https://eslint.org/docs/latest/rules/no-cond-assign#options
+ *
+ * eslint-plugin-vue插件文档：https://eslint.vuejs.org/rules/
  */
 module.exports = {
     root: true,
@@ -15,6 +17,7 @@ module.exports = {
         ecmaVersion: 0000
     },
     rules: {
+        "vue/multi-word-component-names": 0,
         "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
         "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
         "no-alert": 0, //禁止使用alert confirm prompt
